@@ -55,7 +55,7 @@ Ensure you have the following installed:
 ### Steps
 1. Clone the frontend repository:
    ```sh
-   git clone [https://github.com/your-repo/rental-management-frontend.git](https://github.com/NguyenVanTaiIT/vue-nhom8qlphongtro.git)
+   git clone https://github.com/NguyenVanTaiIT/vue-nhom8qlphongtro.git
    cd rental-management-frontend
    ```
 
