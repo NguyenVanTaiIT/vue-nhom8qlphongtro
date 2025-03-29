@@ -55,7 +55,7 @@ Ensure you have the following installed:
 ### Steps
 1. Clone the frontend repository:
    ```sh
-   git clone https://github.com/your-repo/rental-management-frontend.git
+   git clone [https://github.com/your-repo/rental-management-frontend.git](https://github.com/NguyenVanTaiIT/vue-nhom8qlphongtro.git)
    cd rental-management-frontend
    ```
 
@@ -73,7 +73,7 @@ Ensure you have the following installed:
    npm run serve
    ```
 
-5. Access the application at `http://localhost:8080`
+5. Access the application at `http://localhost:3000`
 
 ## Usage
 - **Admin Panel:** Manage rooms, tenants, invoices, and reports.
