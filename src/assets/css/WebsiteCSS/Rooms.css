@@ -1,64 +1,191 @@
-
-
-/* **************************************************************************************** */
-/* main-rooms */
-.main-rooms{
-    padding-top: 80px;
+/* Rooms.css - Phiên bản điều chỉnh khoảng cách và button */
+.main-rooms {
+    font-family: 'Merriweather', serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-bottom: 50px;
 }
 
-.link-home{
+.main-rooms h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.link-home {
+    color: #7f8c8d;
     text-decoration: none;
-    color: black;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    font-size: 0.9rem;
 }
 
-.link-home::after{
-    content: ' >';
+.link-home:hover {
+    color: #e74c3c;
 }
-.rooms{
-    width: 100%;
+
+.link-home + span {
+    color: #e74c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.rooms {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px; /* Tăng khoảng cách giữa các card */
+    padding: 40px 8%; /* Tăng padding để card không sát viền */
+    max-width: 1300px; /* Tăng max-width để có không gian rộng hơn */
+    margin: 0 auto;
 }
 
-.room-card{
-    border: 2px solid hsl(0, 0%, 90%);
-    margin-top: 5%;
-    width: 60%;
-    height: auto;
+.room-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Thêm flex để button luôn ở dưới cùng */
+    flex-direction: column;
+    height: 100%; /* Đảm bảo card có cùng chiều cao */
 }
 
-.room-card img{
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.room-card img {
     width: 100%;
-    height: 40%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #e74c3c;
 }
 
-.room-details{
-    padding: 5px;
+.room-details {
+    padding: 20px;
+    flex-grow: 1; /* Cho phép phần chi tiết mở rộng */
+    display: flex;
+    flex-direction: column;
 }
 
-.room-details table{
+.room-details h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.room-details table {
     width: 100%;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    flex-grow: 1; /* Đẩy button xuống dưới cùng */
 }
 
+.room-details table tr td {
+    padding: 6px 0;
+    color: #555;
+}
 
+.room-details table tr td:first-child {
+    font-weight: 500;
+    color: #2c3e50;
+    width: 40%;
+}
+
+.room-details table tr td:last-child {
+    color: #7f8c8d;
+}
+
+.room-details a {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 0; /* Thay đổi padding để button rộng hơn */
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Tăng khoảng cách với bảng */
+    border: 1px solid #e74c3c;
+    font-size: 0.9rem;
+    text-align: center; /* Căn giữa chữ trong button */
+    width: 100%; /* Button chiếm full width */
+}
+
+.room-details a:hover {
+    background: transparent;
+    color: #e74c3c;
+}
 
 .pagination {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Tăng khoảng cách phân trang */
+    flex-wrap: wrap;
 }
 
 .pagination a {
-    color: black;
+    color: #2c3e50;
     float: left;
-    padding: 8px 16px;
+    padding: 6px 12px;
     text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px; /* Tăng khoảng cách giữa các nút phân trang */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .pagination a.active {
-    background-color: gray;
+    background-color: #e74c3c;
     color: white;
+    border: 1px solid #e74c3c;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .rooms {
+        grid-template-columns: 1fr;
+        padding: 30px 5%; /* Tăng padding cho mobile */
+        gap: 30px; /* Tăng khoảng cách cho mobile */
+    }
+    
+    .main-rooms h1 {
+        font-size: 1.8rem;
+    }
+    
+    .room-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-rooms h1 {
+        font-size: 1.6rem;
+    }
+    
+    .room-details {
+        padding: 15px;
+    }
+    
+    .room-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .pagination a {
+        padding: 5px 10px;
+        margin: 0 3px;
+    }
 }

@@ -12,7 +12,7 @@
                 <img v-bind:src="`data:image/png;base64,${item.image[0]}`">
                 <div class="room-details">
                     <h3>{{ item.name }}</h3>
-                    <table>
+                    <table style="outline: none; border: none;">
                         <tbody>
                             <tr>
                                 <td>Giá phòng</td>
