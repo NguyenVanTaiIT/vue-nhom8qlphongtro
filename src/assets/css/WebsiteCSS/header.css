@@ -1,0 +1,129 @@
+header {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid black;
+}
+
+.header-navbar {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, minmax(30px, 100px));
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top:-12%;
+    background-color: white;
+    border: 2px solid black;
+    width: clamp(10px, 3vw, 100px);
+    height: clamp(10px, 3vw, 100px);
+    border-radius: 40px;
+    transition: width 0.5s linear;
+
+}
+
+.search-box button {
+    background: none;
+    border: none;
+}
+
+.fa-magnifying-glass {
+    color: white;
+    padding: clamp(1px, 0.5vw, 50px);
+    font-size: clamp(1px, 1.2vw, 40px);
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(13%);
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover {
+    box-shadow: 0 0 8px red;
+}
+
+.search-box .inputTim {
+    width: 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    padding-left: 10px;
+    z-index: 100;
+}
+
+.search-box-active {
+    width: 65%;
+    transition: width 0.5s linear;
+}
+
+.search-box-active .inputTim {
+    width: 100%;
+}
+
+
+.header-navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: clamp(10px, 1.1vw, 100px);
+}
+
+.dropdown a{
+    color: black;
+    text-decoration: none;
+    font-size: clamp(10px, 1.2vw, 100px);
+}
+
+
+.header-navbar>button {
+    font-size: clamp(3px, 1.2vw, 100px);
+    background: none;
+    border-radius: 30px;
+    width: 9vw;
+}
+
+.header-navbar>button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-navbar a:hover {
+    text-decoration: underline;
+}
+
+.dropdown a:hover{
+    text-decoration: underline;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

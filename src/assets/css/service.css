@@ -1,0 +1,64 @@
+.service-body {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #f7f8fa;
+    height: 100vh;
+}
+
+.service button{
+    size: 1vmin;
+    font-size: clamp(12px,1vw,50px);
+}
+
+.background-service{
+    background-color: white;
+}       
+
+
+.service {
+    display: grid;
+    border: 1px solid #E6E9ED;
+    margin: 35px;
+    font-size: clamp(15px,1.2vw,50px);
+}
+
+
+.service1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.service3 {
+    display: grid;
+    grid-template-rows:  minmax(20px, 70px) 1fr minmax(20px, 50px);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.service3 table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: clamp(10px,1.2vw,50px);
+}
+
+.service3 p {
+    display: inline;
+}
+
+.service3-3{
+    display: grid;
+    place-items: center;
+}
+

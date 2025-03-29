@@ -1,0 +1,123 @@
+
+
+.grid-body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    background-color: #f7f8fa;
+}
+
+
+.right {
+    background-color: hsl(0, 0%, 90%);
+    grid-template-rows: 10% 10% 80%;
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+.AminHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.AdminTable {
+    background-color: white;
+    padding: 10px;
+}
+
+.AdminTable table {
+    width: 100%;
+}
+
+.AdminTable th,
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.AdminTable th {
+    background-color: #36314b;
+    color: white;
+}
+
+.AdminTable tr:nth-child(even) {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.AdminTable tr td:nth-child(8) {
+    display: grid;
+    place-items: center;
+    border-left: none;
+    border-top: none;
+    padding: 0;
+}
+
+.AdminTable a {
+    margin: 4px;
+    text-decoration: none;
+}
+
+.PheDuyetBTN {
+    border: 2px solid #30b318;
+    background-color: #30b318;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 60%;
+}
+
+.KhongPDBTN {
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 20px;
+    width: 90%;
+    color: white;
+    cursor: pointer;
+}
+
+.QuanLyBTN {
+    border: 2px solid #2100FF;
+    background-color: #2100FF;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    width: 60%;
+}
+
+.TraPhongBTN {
+    border: 2px solid #FFFA00;
+    background-color: #FFFA00;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    width: 70%;
+}
+
+
+.ThuTienBTN {
+    border: 2px solid #ff00d4;
+    background-color: #ff00d4;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    width: 70%;
+}
+
+
+.QuaHanBTN {
+    border: 2px solid red;
+    background-color: wheat;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    width: 70%;
+}
+
+

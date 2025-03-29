@@ -1,0 +1,44 @@
+# Tệp log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Thư mục node_modules
+/node_modules
+
+# Tệp cấu hình IDE/Editor
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Tệp build/output
+/dist
+/build
+
+# Tệp môi trường (environment)
+.env
+.env.local
+.env.*.local
+
+# Tệp tạm thời
+*.tmp
+*.bak
+*.swp
+*~
+
+# Tệp khóa package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Tệp coverage (nếu dùng testing)
+coverage/
+
+# Tệp hệ thống
+.DS_Store
+Thumbs.db
+
+# Tệp cấu hình cục bộ của Vue CLI
+vue.config.js.local

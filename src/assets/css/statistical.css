@@ -1,0 +1,71 @@
+.statistical{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.statistical p{
+    margin: 0;
+}
+.house img{
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.house{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #ab0000;
+    color: white;
+}
+
+.floor{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #00970a;
+    color: white;
+}
+
+.roomQuanity{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #ffb300;
+    color: white;
+}
+
+.rent{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #6e007c;
+    color: white;
+}
+
+.rentClock{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #0098a7;
+    color: white;
+}
+
+.money{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: blue;
+    color: white;
+}
+
+.backHomebtn{
+    margin-top: 5%;
+    border: 2px solid black ;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: clamp(10px,1.5vw,150px);
+}
+
+.backHomebtn:hover{
+    background-color: black;
+    color: white;
+}

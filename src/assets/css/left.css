@@ -1,0 +1,79 @@
+.left-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+
+.left {
+    display: grid;
+    grid-template-rows: 50px 50px 200px 50px ;
+    width: 20%;
+    align-items: center;
+    position: fixed;
+    background-color: #1a2232;
+    border: 2px solid #303745;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    gap: 30px;
+}
+.left::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 50px;
+}
+.left::-webkit-scrollbar{
+    display: none;
+}
+.left::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.left:hover::-webkit-scrollbar{
+    display: block;
+    width: 5px;
+}
+
+
+.left h3,h4{
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: clamp(15px,2vw,50px);
+}
+
+.left p {
+    margin: 0;
+}
+
+.left img {
+    width: 70%;
+    justify-self: center;
+    outline: none;
+}
+
+.left a {
+    color: white;
+    padding-left: 15px;
+    font-size: clamp(15px,1.5vw,50px);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.left a:hover {
+    background-color: #212a41;
+    /* color: black; */
+    font-weight: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.left a:active {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+    opacity: 0.7;
+}
+
+.left a.clicked {
+    background-color: white;
+    color: black;
+}  

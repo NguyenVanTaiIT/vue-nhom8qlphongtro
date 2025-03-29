@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ConfirmTC{
+    padding-top: 10%;
+    text-align: center;
+}
+
+
+.ConfirmTC i{
+    margin-top: 2%;
+    font-size: clamp(10px, 10vw,500px);
+    animation: grow 0.2s ease-in-out;
+}
+
+
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
+}

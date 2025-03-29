@@ -1,0 +1,11 @@
+.UserRoomTable th{
+    background-color: #5d73c3;
+    color: white;
+    border: 2px solid white;
+}
+
+.UserRoomTable tr > td {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    border-bottom: 2px solid #5d73c3;
+}

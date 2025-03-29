@@ -1,0 +1,48 @@
+.OrderTable{
+    border-bottom: 2px solid #00cccc;
+    border-collapse: collapse;
+}
+
+.OrderTable th{
+    background: #00cccc;
+    color: white;
+    text-align: center;
+}
+
+.OrderTable th,td{
+    border: 1px solid #eee;
+}
+
+.OrderTable td{
+    color: #999;
+}
+
+.OrderTable tr:hover{
+    td{
+        background: #f4f4f4;
+        color: #555;
+    }
+}
+
+.OrderTable tr td:last-child{
+    width: 180px;
+}
+
+.showBillbtn{
+    background-color: black;
+    width: 100%;
+}
+
+.OrderTable tr td:last-child a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.showBillbtn:hover{
+    transform: scale(1.1);
+    a{
+        font-weight: bold;
+    }
+}
