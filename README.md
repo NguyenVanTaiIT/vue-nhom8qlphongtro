@@ -39,7 +39,7 @@ The **Rental Management System** is a Vue.js-based web application designed to s
 - **Styling:** HTML, CSS, Bootstrap, FontAwesome
 - **Scripting:** JavaScript
 - **HTTP Requests:** Axios
-- **Backend:** Spring Boot (RESTful API) [GitHub Backend Repo](https://github.com/HuyBui111/DACN.github.io.git)
+- **Backend:** Spring Boot (RESTful API) [GitHub Backend Repo](https://github.com/chianhluvC/Smart-Motel-Management-with-AI-Powered-Chatbot.git)
 - **Database:** MySQL
 - **Authentication:** JWT
 - **Email Service:** Nodemailer / SendGrid
